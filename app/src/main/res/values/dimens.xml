@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_margin">16dp</dimen>
+    
+    <dimen name="activity_margin_content">24dp</dimen>
+    <dimen name="activity_margin_left_content">133dp</dimen>
+    
+    <dimen name="activity_thumb_width">130dp</dimen>
+    <dimen name="activity_thumb_height">150dp</dimen>
+
+    <dimen name="activity_margin_left_item">5dp</dimen>
+    <dimen name="activity_margin_start_item">5dp</dimen>
+    <dimen name="activity_margin_end_item">5dp</dimen>
+    <dimen name="activity_margin_right_item">5dp</dimen>
+    <dimen name="activity_margin_top_item">5dp</dimen>
+
+    <dimen name="activity_margin_top_grid">6dp</dimen>
+    <dimen name="activity_margin_left_grid">5dp</dimen>
+    <dimen name="activity_margin_start_grid">5dp</dimen>
+    <dimen name="activity_margin_end_grid">5dp</dimen>
+    <dimen name="activity_margin_right_grid">5dp</dimen>
+
+
+    <dimen name="activity_content_text_size_large">15sp</dimen>
+    <dimen name="activity_content_text_size_medium">14sp</dimen>
+    <dimen name="activity_content_text_size_small">14sp</dimen>
+
+    <dimen name="activity_product_progressbar_height">30dp</dimen>
+    <dimen name="activity_product_progressbar_width">30dp</dimen>
+
+
+    <dimen name="activity_retry_width">50dp</dimen>
+    <dimen name="activity_retry_height">50dp</dimen>
+</resources>

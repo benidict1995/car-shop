@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.benidict.car_shop"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    Map<String, String> dependencies = rootProject.ext.dependencies;
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    implementation dependencies.supportLibrary.appCompat
+    implementation dependencies.supportLibrary.design
+    implementation dependencies.supportLibrary.recyclerView
+    implementation dependencies.supportLibrary.cardView
+
+    implementation dependencies.butterKnife.butterknife
+    annotationProcessor dependencies.butterKnife.butterknifeCompiler
+
+    implementation dependencies.glideLoader.glideImageLoader
+
+    implementation dependencies.dagger2.dagger
+    annotationProcessor dependencies.dagger2.daggerCompiler
+    implementation dependencies.dagger2.javaxAnnotation
+
+    implementation dependencies.retrofitSquare.retrofit
+
+    implementation dependencies.gsonGoogle.gson
+    implementation dependencies.gsonGoogle.gsonConverter
+
+    implementation dependencies.okHttpSquare.okHttp
+    implementation dependencies.okHttpSquare.okio
+
+    implementation dependencies.reactiveX.rxJava
+    implementation dependencies.reactiveX.rxAndroid
+    implementation dependencies.reactiveX.rxJavaAdapter
+
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:id="@+id/retry_layout"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_content_text_size_large"
+            android:id="@+id/err_title"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            tools:text="Could not connect to the server."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="center"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textSize="@dimen/activity_content_text_size_medium"
+            android:text="@string/err_fixed"
+            tools:text="Not connected to then internet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/btn_retry"
+            android:layout_marginTop="@dimen/activity_margin_top_item"
+            android:background="@drawable/ic_file_download_black_24dp"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/activity_retry_width"
+            android:layout_height="@dimen/activity_retry_height" />
+
+    </LinearLayout>
+
+</merge>

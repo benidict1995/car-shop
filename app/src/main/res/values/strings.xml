@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Car Shop</string>
+
+    <string name="sample_car_brand">Suzuki</string>
+    <string name="sample_car_name">Suzuki Celerio MT</string>
+    <string name="sample_car_price">₱ 538,000</string>
+
+    <string name="button_view">View</string>
+    <string name="button_buy">Buy</string>
+
+    <string name="download_data">Download data done&#8230;</string>
+    <string name="download_data_failed">Download data failed&#8230;</string>
+
+    <string name="err_no_internet">Could not connect to the server.</string>
+    <string name="err_timeout">TimeOut</string>
+    <string name="err_fixed">Not connected to the internet</string>
+    <string name="err_msg_unknown">An unexpected error occurred</string>
+
+    <string name="toolbar_menu_list">List</string>
+    <string name="toolbar_menu_refresh">Refresh</string>
+    <string name="toolbar_search_hint">Price, Brand Name</string>
+
+    <string name="item_basic_info">Basic Info: </string>
+</resources>

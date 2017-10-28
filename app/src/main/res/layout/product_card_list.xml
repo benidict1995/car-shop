@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="@dimen/activity_margin_top_item"
+        android:layout_marginLeft="@dimen/activity_margin_left_item"
+        android:layout_marginStart="@dimen/activity_margin_start_item"
+        android:background="@color/colorWhite"
+        android:layout_width="@dimen/activity_thumb_width"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/car_img"
+            android:background="@drawable/ic_image_black_24dp"
+            tools:background="@drawable/ic_image_black_24dp"
+            android:layout_width="@dimen/activity_thumb_width"
+            android:layout_height="match_parent" />
+
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginBottom="3dp"
+        android:paddingLeft="@dimen/activity_margin_left_item"
+        android:paddingStart="@dimen/activity_margin_start_item"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:layout_marginTop="@dimen/activity_margin_top_item"
+        android:layout_marginEnd="@dimen/activity_margin_end_item"
+        android:layout_marginRight="@dimen/activity_margin_right_item"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatTextView
+            app:autoSizeTextType="uniform"
+            app:autoSizePresetSizes="@array/autosize_text_sizes"
+            android:maxLines="2"
+            android:textSize="@dimen/activity_content_text_size_large"
+            android:id="@+id/car_name"
+            android:text="@string/sample_car_name"
+            android:layout_marginTop="6dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            tools:text="Suzuki Celerio MT"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:text="@string/item_basic_info"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            tools:text="@string/item_basic_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--Suzuki Celerio MT-->
+        <TextView
+            android:textSize="@dimen/activity_content_text_size_medium"
+            android:id="@+id/car_brand"
+            android:text="@string/sample_car_brand"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="Suzuki"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:textSize="@dimen/activity_content_text_size_small"
+            android:id="@+id/car_price"
+            android:text="@string/sample_car_price"
+            android:textColor="@color/colorOrange"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            tools:text="₱ 538,000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="6dp"
+            android:background="@color/colorLightGray"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+        <LinearLayout
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/btn_view"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/button_view"
+                tools:text="View"
+                android:layout_weight=".50"
+                android:layout_width="0dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/btn_buy"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/button_buy"
+                tools:text="Buy"
+                android:layout_weight=".50"
+                android:layout_width="0dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

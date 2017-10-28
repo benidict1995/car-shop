@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/activity_margin_left_grid"
+    android:layout_marginStart="@dimen/activity_margin_start_grid"
+    android:layout_marginTop="@dimen/activity_margin_top_grid"
+    android:layout_marginEnd="@dimen/activity_margin_end_grid"
+    android:layout_marginRight="@dimen/activity_margin_right_grid"
+    android:layout_marginBottom="3dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/car_img"
+            android:background="@drawable/ic_image_black_24dp"
+            tools:background="@drawable/ic_image_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_thumb_height" />
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        app:autoSizeTextType="uniform"
+        app:autoSizePresetSizes="@array/autosize_text_sizes"
+        android:text="@string/sample_car_name"
+        android:layout_marginTop="4dp"
+        android:id="@+id/car_name"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        tools:text="Suzuki Celerio MT"
+        android:textSize="@dimen/activity_content_text_size_large"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+     <TextView
+         android:text="@string/item_basic_info"
+         android:layout_marginTop="4dp"
+         android:textSize="12sp"
+         tools:text="@string/item_basic_info"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="@string/sample_car_brand"
+        android:id="@+id/car_brand"
+        android:textSize="@dimen/activity_content_text_size_medium"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        tools:text="Suzuki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="@string/sample_car_price"
+        android:id="@+id/car_price"
+        tools:text="₱ 538,000"
+        android:textColor="@color/colorOrange"
+        android:textSize="@dimen/activity_content_text_size_small"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="6dp"
+        android:background="@color/colorLightGray"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_gravity="center|bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <Button
+            android:text="@string/button_view"
+            android:id="@+id/btn_view"
+            style="?android:attr/borderlessButtonStyle"
+            tools:text="View"
+            android:layout_weight=".50"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:text="@string/button_buy"
+            android:id="@+id/btn_buy"
+            style="?android:attr/borderlessButtonStyle"
+            tools:text="Buy"
+            android:layout_weight=".50"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
